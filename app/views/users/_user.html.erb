@@ -1,0 +1,15 @@
+<div id="<%= dom_id user %>" class="scaffold_record">
+  <p>
+    <strong>Name:</strong>
+    <%= user.name %>
+  </p>
+
+  <p class="relative group">
+    <%= link_to "Show this user", user, class: "peer" %>
+    <turbo-frame id="<%= dom_id user, :tooltip %>"
+                 src="<%= user_tooltip_path(user, turbo_frame: dom_id(user, :tooltip)) %>"
+                 class="absolute hidden group-hover:block peer-hover:block focus-within:block"
+                 loading="lazy"
+    ></turbo-frame>
+  </p>
+</div>
