@@ -1,0 +1,12 @@
+<div id="<%= dom_id applicant %>" class="scaffold_record">
+  <p>
+    <strong>Name:</strong>
+    <%= applicant.name %>
+  </p>
+
+  <%= render partial: "personal_references/personal_reference", collection: applicant.personal_references %>
+
+  <p>
+    <%= link_to "Show this applicant", applicant %>
+  </p>
+</div>
