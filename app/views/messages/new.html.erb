@@ -1,0 +1,11 @@
+<turbo-frame id="<%= params.fetch(:turbo_frame, dom_id(@message)) %>" target="_top">
+  <h1>New message</h1>
+
+  <%= render "form", message: @message %>
+
+  <br>
+
+  <div class="group-open:hidden">
+    <%= link_to "Back to messages", messages_path %>
+  </div>
+</turbo-frame>

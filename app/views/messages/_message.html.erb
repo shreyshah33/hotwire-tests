@@ -1,0 +1,15 @@
+<div id="<%= dom_id message %>" class="scaffold_record">
+  <p>
+    <strong>Author:</strong>
+    <%= link_to message.author, author_path(message.author) %>
+    <%= button_to message.author, author_path(message.author, turbo_frame: "drawer"), method: :get, data: { turbo_frame: "drawer" } %>
+  </p>
+
+  <p>
+    <%= message.content %>
+  </p>
+
+  <p>
+    <%= link_to "Show this message", message %>
+  </p>
+</div>
