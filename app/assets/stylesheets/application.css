@@ -1,0 +1,36 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+[hidden]                                            { display: none !important; }
+
+.absolute                                           { position: absolute; }
+.bg-white                                           { background-color: white; }
+.border-0                                           { border-width: 0; }
+.flex                                               { display: flex; }
+.flex-col                                           { flex-direction: column; }
+.p-0                                                { padding: 0; }
+.p-1                                                { padding: 0.25rem; }
+.sr-only                                            { position: absolute;
+                                                      width: 1px;
+                                                      height: 1px;
+                                                      padding: 0;
+                                                      margin: -1px;
+                                                      overflow: hidden;
+                                                      clip: rect(0, 0, 0, 0);
+                                                      white-space: nowrap;
+                                                      border-width: 0; }
+
+button[aria-selected="true"]                        { outline: 2px dotted black; }
